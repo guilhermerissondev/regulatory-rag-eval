@@ -1,0 +1,160 @@
+{
+  "_metodo": [
+    "Conjunto dourado construído à mão, lendo o texto do corpus e ancorando cada",
+    "pergunta em dispositivo verificado. Não foi gerado por LLM de propósito: uma",
+    "pergunta escrita a partir de um chunk pelo mesmo tipo de modelo que depois vai",
+    "respondê-la mede a circularidade, não a capacidade. É trabalho manual e é o que",
+    "torna as métricas de recuperação confiáveis.",
+    "",
+    "Campo 'armadilha' marca o que a pergunta testa além da recuperação:",
+    "  empilhamento  o dispositivo que responde tem versões antigas coladas no texto",
+    "  sem_resposta  o corpus não contém a resposta; responder é alucinar",
+    "  ambiguidade   a numeração do artigo colide entre corpo e regulamento anexo"
+  ],
+  "perguntas": [
+    {
+      "id": "q01",
+      "pergunta": "A partir de quantas contas ativas a participação no Pix passa a ser obrigatória para uma instituição?",
+      "categoria": "obrigatoriedade",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "3"}],
+      "resposta_referencia": "Mais de quinhentas mil contas de clientes ativas.",
+      "armadilha": null
+    },
+    {
+      "id": "q02",
+      "pergunta": "Em que data o DICT entrou em operação plena?",
+      "categoria": "prazo",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "8"}],
+      "resposta_referencia": "16 de novembro de 2020.",
+      "armadilha": null
+    },
+    {
+      "id": "q03",
+      "pergunta": "Quando o Pix entrou em operação restrita?",
+      "categoria": "prazo",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "9"}],
+      "resposta_referencia": "3 de novembro de 2020.",
+      "armadilha": null
+    },
+    {
+      "id": "q04",
+      "pergunta": "Qual a data de entrada em vigor da Resolução que instituiu o Pix?",
+      "categoria": "prazo",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "12"}],
+      "resposta_referencia": "1º de setembro de 2020.",
+      "armadilha": null
+    },
+    {
+      "id": "q05",
+      "pergunta": "O que é o Fórum Pix e qual a sua natureza?",
+      "categoria": "governanca",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "5"}],
+      "resposta_referencia": "Comitê consultivo permanente que subsidia o Banco Central na definição das regras do Pix.",
+      "armadilha": null
+    },
+    {
+      "id": "q06",
+      "pergunta": "O que a governança do Pix deve garantir?",
+      "categoria": "governanca",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "4"}],
+      "resposta_referencia": "Representatividade e pluralidade de instituições e segmentos, e acesso não discriminatório.",
+      "armadilha": null
+    },
+    {
+      "id": "q07",
+      "pergunta": "Com quanta antecedência o participante responsável deve comunicar o encerramento da prestação de serviço ao participante contratante?",
+      "categoria": "prazo",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "Regulamento anexo", "artigo": "29"}],
+      "resposta_referencia": "Antecedência mínima de 90 (noventa) dias.",
+      "armadilha": null
+    },
+    {
+      "id": "q08",
+      "pergunta": "Quais documentos compõem o Regulamento do Pix além do próprio regulamento?",
+      "categoria": "estrutura",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "Regulamento anexo", "artigo": "2"}],
+      "resposta_referencia": "Manual de Uso da Marca, Manual de Padrões para Iniciação, Manual de Fluxos, Requisitos Mínimos para Experiência do Usuário, Manual de Redes do SFN e Manual de Segurança.",
+      "armadilha": null
+    },
+    {
+      "id": "q09",
+      "pergunta": "Quem se sujeita ao disposto no Regulamento do Pix?",
+      "categoria": "ambito",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "Regulamento anexo", "artigo": "1"}],
+      "resposta_referencia": "Todos os participantes do arranjo de pagamentos Pix.",
+      "armadilha": "ambiguidade"
+    },
+    {
+      "id": "q10",
+      "pergunta": "Por qual meio os participantes devem, no mínimo, disponibilizar a iniciação de um Pix para pessoas naturais?",
+      "categoria": "operacao",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "Regulamento anexo", "artigo": "6"}],
+      "resposta_referencia": "Pelo menos por meio do aplicativo principal de relacionamento com o usuário.",
+      "armadilha": null
+    },
+    {
+      "id": "q11",
+      "pergunta": "Em que situações uma transação Pix deve ser rejeitada pelo prestador de serviço do usuário recebedor?",
+      "categoria": "operacao",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "Regulamento anexo", "artigo": "39"}],
+      "resposta_referencia": "Fundada suspeita de fraude, problemas na identificação do usuário recebedor, agente de saque não habilitado, entre outras hipóteses vigentes.",
+      "armadilha": "empilhamento"
+    },
+    {
+      "id": "q12",
+      "pergunta": "Que transações são admitidas no âmbito do Pix além das previstas no art. 4º do Regulamento?",
+      "categoria": "ambito",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "Regulamento anexo", "artigo": "4-A"}],
+      "resposta_referencia": "Transações entre conta de depósito ou conta de pagamento pré-paga e outras contas transacionais listadas no dispositivo.",
+      "armadilha": "empilhamento"
+    },
+    {
+      "id": "q13",
+      "pergunta": "A partir de que data as instituições, exceto cooperativas de crédito, passam a observar requisitos adicionais para atuar como provedor de conta transacional?",
+      "categoria": "prazo",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "3-A"}],
+      "resposta_referencia": "A partir de 1º de janeiro de 2026.",
+      "armadilha": null
+    },
+    {
+      "id": "q14",
+      "pergunta": "Os participantes provedores de conta transacional devem estabelecer limites de valor para pessoas físicas?",
+      "categoria": "limites",
+      "artigos_relevantes": [{"norma": "Instrução Normativa BCB nº 512", "parte": "", "artigo": "3"}],
+      "resposta_referencia": "Sim, devem estabelecer limites máximos de valor por conta transacional para usuários pagadores pessoa física.",
+      "armadilha": null
+    },
+    {
+      "id": "q15",
+      "pergunta": "O Banco Central detalhará em ato específico orientações complementares sobre o funcionamento do Pix e do DICT?",
+      "categoria": "estrutura",
+      "artigos_relevantes": [{"norma": "Resolução BCB nº 1", "parte": "", "artigo": "10"}],
+      "resposta_referencia": "Sim, inclusive quanto a horários diferenciados, nos termos dos arts. 8º e 9º.",
+      "armadilha": null
+    },
+    {
+      "id": "q16",
+      "pergunta": "Qual é a alíquota do imposto de renda sobre transações Pix acima de mil reais?",
+      "categoria": "inexistente",
+      "artigos_relevantes": [],
+      "resposta_referencia": "Não há previsão no corpus. O sistema deve responder que não encontrou base normativa.",
+      "armadilha": "sem_resposta"
+    },
+    {
+      "id": "q17",
+      "pergunta": "Quantos funcionários o Banco Central deve alocar na fiscalização do Pix?",
+      "categoria": "inexistente",
+      "artigos_relevantes": [],
+      "resposta_referencia": "Não há previsão no corpus.",
+      "armadilha": "sem_resposta"
+    },
+    {
+      "id": "q18",
+      "pergunta": "Qual o valor máximo de multa aplicável ao usuário final que descumprir o Regulamento do Pix?",
+      "categoria": "inexistente",
+      "artigos_relevantes": [],
+      "resposta_referencia": "Não há previsão no corpus; o Regulamento trata de penalidades a participantes, não a usuários finais.",
+      "armadilha": "sem_resposta"
+    }
+  ]
+}

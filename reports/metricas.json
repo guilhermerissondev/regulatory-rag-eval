@@ -1,0 +1,72 @@
+{
+  "corpus": {
+    "chunks": 6360,
+    "pct_chunks_norma_revogada": 0.3721698113207547,
+    "pct_chunks_artigo_revogado": 0.03349056603773585
+  },
+  "recuperacao": {
+    "bm25": {
+      "mrr": 0.3611111111111111,
+      "recall@1": 0.13333333333333333,
+      "recall@3": 0.6,
+      "recall@5": 0.7333333333333333,
+      "recall@8": 0.8,
+      "recall@10": 0.8,
+      "precisao@1": 0.13333333333333333,
+      "precisao@3": 0.2,
+      "precisao@5": 0.14666666666666664,
+      "precisao@8": 0.1,
+      "precisao@10": 0.08000000000000002,
+      "perguntas": 15.0,
+      "sem_nenhum_acerto": 0.26666666666666666,
+      "ctx_com_revogado": 0.8666666666666667,
+      "ctx_com_art_revogado": 0.13333333333333333,
+      "ctx_com_alterado": 0.9333333333333333
+    },
+    "denso": {
+      "mrr": 0.47833333333333333,
+      "recall@1": 0.3333333333333333,
+      "recall@3": 0.5333333333333333,
+      "recall@5": 0.8,
+      "recall@8": 0.9333333333333333,
+      "recall@10": 1.0,
+      "precisao@1": 0.3333333333333333,
+      "precisao@3": 0.17777777777777778,
+      "precisao@5": 0.16000000000000003,
+      "precisao@8": 0.11666666666666667,
+      "precisao@10": 0.10000000000000003,
+      "perguntas": 15.0,
+      "sem_nenhum_acerto": 0.13333333333333333,
+      "ctx_com_revogado": 0.8666666666666667,
+      "ctx_com_art_revogado": 0.2,
+      "ctx_com_alterado": 0.9333333333333333
+    },
+    "hibrido": {
+      "mrr": 0.6444444444444444,
+      "recall@1": 0.5333333333333333,
+      "recall@3": 0.8,
+      "recall@5": 0.8,
+      "recall@8": 0.8,
+      "recall@10": 0.8,
+      "precisao@1": 0.5333333333333333,
+      "precisao@3": 0.26666666666666666,
+      "precisao@5": 0.16000000000000003,
+      "precisao@8": 0.1,
+      "precisao@10": 0.08000000000000002,
+      "perguntas": 15.0,
+      "sem_nenhum_acerto": 0.2,
+      "ctx_com_revogado": 0.8,
+      "ctx_com_art_revogado": 0.26666666666666666,
+      "ctx_com_alterado": 0.9333333333333333
+    }
+  },
+  "contaminacao": {
+    "perguntas": 15,
+    "trechos_por_pergunta": 8,
+    "pct_perguntas_com_revogado_no_ctx": 0.8,
+    "pct_perguntas_com_art_revogado_no_ctx": 0.26666666666666666,
+    "trechos_empilhados": 13,
+    "pct_trechos_empilhados": 0.10833333333333334,
+    "corpus_pct_revogado": 0.3721698113207547
+  }
+}

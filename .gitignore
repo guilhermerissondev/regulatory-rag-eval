@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Corpus e índice são reproduzíveis pelos scripts.
+data/raw/
+data/processed/
+models/
+
+# Nunca versionar credencial.
+.env
+*.key
+kaggle.json
+
+# O conjunto dourado é trabalho manual e VAI para o repositório: sem ele
+# as métricas não são reproduzíveis.
+!data/golden.json
+
+# reports/ fica versionado: é o que o README referencia.
